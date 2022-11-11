@@ -30,5 +30,7 @@ public class nota {
         {
             System.out.println("wat");
         }
+
+        //blablablabla
     }
 }
