@@ -1,8 +1,11 @@
+package utiles;
+
+import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class UtilesArrayJuanGarcia {
-  public static int[] limpiar(int[] array) {
-    int[] newArr = new int[0];
+  public static Array<T> limpiar(T[] array) {
+    T[] newArr = new T[0];
     return newArr;
   }
 
@@ -25,7 +28,15 @@ public class UtilesArrayJuanGarcia {
     return insertarEnPosicion(arr, valor, arr.length);
   }
 
+  public static String[] insertarAlFinal(String[] arr, String valor) {
+    return insertarEnPosicion(arr, valor, arr.length);
+  }
+
   public static int[] insertarAlPrincipio(int[] arr, int valor) {
+    return insertarEnPosicion(arr, valor, 0);
+  }
+
+  public static String[] insertarAlPrincipio(String[] arr, String valor) {
     return insertarEnPosicion(arr, valor, 0);
   }
 
@@ -43,20 +54,35 @@ public class UtilesArrayJuanGarcia {
     }
   }
 
+  public static String[] insertarEnPosicion(String[] arr, String valor, int pos) {
+    if (pos >= 0 && pos <= arr.length) {
+      String[] newArr = new String[arr.length + 1];
+      System.arraycopy(arr, 0, newArr, 0, pos);
+      newArr[pos] = valor;
+      System.arraycopy(arr, pos, newArr, pos + 1, arr.length - pos);
+
+      return newArr;
+    } else {
+      System.out.println("Posición invalida");
+      return arr;
+    }
+  }
+
   public static int[] insertarOrdenado(int[] arr, int valor) {
-    int[] newArr = new int[arr.length];
+    int[] newArr = new int[arr.length + 1];
 
     if (estaOrdenado(arr)) {
       for (int i = 0; i < arr.length; i++) {
-        if (valor <= arr[i]) {
+        if (valor >= arr[i]) {
           newArr[i] = arr[i];
-        } else if (valor > arr[i] && valor < arr[i + 1]) {
+        } else if (valor > arr[i - 1] && valor < arr[i]) {
           newArr[i] = valor;
         } else {
-          newArr[i + 1] = arr[i];
+          newArr[i] = arr[i - 1];
         }
       }
     }
+    newArr[newArr.length - 1] = arr[arr.length - 1];
 
     return newArr;
   }
@@ -156,7 +182,7 @@ public class UtilesArrayJuanGarcia {
     boolean ordered = true;
 
     for (int i = 0; i < arr.length - 1; i++) {
-      if (arr[i] < arr[i + 1]) {
+      if (arr[i] > arr[i + 1]) {
         ordered = false;
       }
     }
@@ -177,13 +203,18 @@ public class UtilesArrayJuanGarcia {
   }
 
   public static int[] partirPor(int[] arr, int posicionInicial, int posicionFinal) {
-    int[] newArr = new int[posicionFinal - posicionInicial];
+    if (posicionInicial < posicionFinal && posicionInicial >= 0 && posicionFinal <= arr.length) {
+      int[] newArr = new int[posicionFinal - posicionInicial + 1];
 
-    for (int i = posicionInicial; i < posicionFinal; i++) {
-      newArr[i - posicionInicial] = arr[i];
+      for (int i = posicionInicial; i <= posicionFinal; i++) {
+        newArr[i - posicionInicial] = arr[i];
+      }
+
+      return newArr;
+    } else {
+      System.out.println("Posición inválida");
+      return arr;
     }
-
-    return newArr;
   }
 
   public static boolean sonIguales(int[] arr1, int[] arr2) {
@@ -208,7 +239,7 @@ public class UtilesArrayJuanGarcia {
     array = rellenar(array, 7, 10);
     imprimir(array);
 
-    System.out.println("INSERTAR AL FINAL:");
+    System.out.println("INSERTA AL FINAL:");
     array = insertarAlFinal(array, 99);
     imprimir(array);
 
@@ -243,12 +274,20 @@ public class UtilesArrayJuanGarcia {
     array = ordena(array);
     imprimir(array);
 
+    System.out.println("INSERTAR ORDENADO:");
+    array = insertarOrdenado(array, 55);
+    imprimir(array);
+
     System.out.println("INVERTIR:");
     array = invertir(array);
     imprimir(array);
 
     System.out.println("DESORDENAR:");
     array = desordena(array);
+    imprimir(array);
+
+    System.out.println("PARTIR ARRAY");
+    array = partirPor(array, 1, 8);
     imprimir(array);
 
   }
