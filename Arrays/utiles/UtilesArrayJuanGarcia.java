@@ -1,11 +1,10 @@
 package utiles;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class UtilesArrayJuanGarcia {
-  public static Array<T> limpiar(T[] array) {
-    T[] newArr = new T[0];
+  public static int[] limpiar(int[] array) {
+    int[] newArr = new int[0];
     return newArr;
   }
 
