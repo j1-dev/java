@@ -85,47 +85,44 @@ public class ej3c {
           System.out.print("Por favor, introduzca el código del disco cuyos datos desea cambiar: ");
           codigoIntroducido = s.nextLine();
 
-          if (checkCodigo(discos, codigoIntroducido)) {
-            int i = -1;
-            do {
-              i++;
-            } while (!((discos[i].getCodigo()).equals(codigoIntroducido)));
+          int pos = checkCodigo(discos, codigoIntroducido);
 
+          if (pos != -1) {
             System.out.println("Introduzca los nuevos datos del disco o INTRO para dejarlos igual.");
 
-            System.out.println("Código: " + discos[i].getCodigo());
+            System.out.println("Código: " + discos[pos].getCodigo());
             System.out.print("Nuevo código: ");
             codigoIntroducido = s.nextLine();
             if (!codigoIntroducido.equals("")) {
-              discos[i].setCodigo(codigoIntroducido);
+              discos[pos].setCodigo(codigoIntroducido);
             }
 
-            System.out.println("Autor: " + discos[i].getAutor());
+            System.out.println("Autor: " + discos[pos].getAutor());
             System.out.print("Nuevo autor: ");
             autorIntroducido = s.nextLine();
             if (!autorIntroducido.equals("")) {
-              discos[i].setAutor(autorIntroducido);
+              discos[pos].setAutor(autorIntroducido);
             }
 
-            System.out.println("Título: " + discos[i].getTitulo());
+            System.out.println("Título: " + discos[pos].getTitulo());
             System.out.print("Nuevo título: ");
             tituloIntroducido = s.nextLine();
             if (!tituloIntroducido.equals("")) {
-              discos[i].setTitulo(tituloIntroducido);
+              discos[pos].setTitulo(tituloIntroducido);
             }
 
-            System.out.println("Género: " + discos[i].getGenero());
+            System.out.println("Género: " + discos[pos].getGenero());
             System.out.print("Nuevo género: ");
             generoIntroducido = s.nextLine();
             if (!generoIntroducido.equals("")) {
-              discos[i].setGenero(generoIntroducido);
+              discos[pos].setGenero(generoIntroducido);
             }
 
-            System.out.println("Duración: " + discos[i].getDuracion());
+            System.out.println("Duración: " + discos[pos].getDuracion());
             System.out.print("Duración: ");
             final String duracionIntroducidaString = s.nextLine();
             if (!duracionIntroducidaString.equals("")) {
-              discos[i].setDuracion(Integer.parseInt(duracionIntroducidaString));
+              discos[pos].setDuracion(Integer.parseInt(duracionIntroducidaString));
             }
           } else {
             System.out.println("Codigo incorrecto");
@@ -140,12 +137,10 @@ public class ej3c {
           System.out.print("Por favor, introduzca el código del disco que desea borrar: ");
           codigoIntroducido = s.nextLine();
 
-          if (checkCodigo(discos, codigoIntroducido)) {
-            int i = -1;
-            do {
-              i++;
-            } while (!((discos[i].getCodigo()).equals(codigoIntroducido)));
-            discos = eliminar(discos, i);
+          pos = checkCodigo(discos, codigoIntroducido);
+
+          if (pos != -1) {
+            discos = eliminar(discos, pos);
             System.out.println("Album borrado.");
           } else {
             System.out.println("Código incorrecto");
@@ -189,12 +184,12 @@ public class ej3c {
     }
   }
 
-  public static boolean checkCodigo(Disco[] discos, String codigo) {
-    boolean existe = false;
+  public static int checkCodigo(Disco[] discos, String codigo) {
+    int existe = -1;
 
-    for (int i = 0; i < discos.length && !existe; i++) {
+    for (int i = 0; i < discos.length && existe == -1; i++) {
       if (discos[i].getCodigo().equals(codigo)) {
-        existe = true;
+        existe = i;
       }
     }
 
