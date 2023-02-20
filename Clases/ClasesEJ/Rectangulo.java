@@ -1,24 +1,23 @@
 package Clases.ClasesEJ;
 
-public class Rectangulo {
-  private int base, altura;
-  private static int cantidad = 0;
+public class Rectangulo extends FiguraGeometrica {
+  private double base, altura;
 
-  public Rectangulo(int base, int altura) {
+  public Rectangulo(double base, double altura, String color) {
+    super(color);
     this.base = base;
     this.altura = altura;
-    cantidad++;
   }
 
-  public int getBase() {
+  public double getBase() {
     return base;
   }
 
-  public void setBase(int base) {
+  public void setBase(double base) {
     this.base = base;
   }
 
-  public int getAltura() {
+  public double getAltura() {
     return altura;
   }
 
@@ -26,16 +25,15 @@ public class Rectangulo {
     this.altura = altura;
   }
 
-  public static int getCantidad() {
-    return cantidad;
+  public double perimetro() {
+    return (2 * base + 2 * altura);
   }
 
-  public static void setCantidad(int cantidad) {
-    Rectangulo.cantidad = cantidad;
+  public double area() {
+    return base * altura;
   }
 
-  @Override
-  public String toString() {
+  public String pintar() {
     String str = "";
 
     for (int i = 0; i < altura; i++) {
@@ -46,6 +44,11 @@ public class Rectangulo {
     }
 
     return str;
+  }
+
+  @Override
+  public String toString() {
+    return "Rectangulo [base= " + base + ", altura= " + altura + ", color= " + super.getColor() + "]";
   }
 
 }
