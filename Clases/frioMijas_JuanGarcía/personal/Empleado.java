@@ -6,4 +6,9 @@ public class Empleado extends Personal {
     super(nombre, apellidos, edad, salario, dni);
   }
 
+  @Override
+  public String toString() {
+    return "Empleado [" + super.toString() + "]";
+  }
+
 }

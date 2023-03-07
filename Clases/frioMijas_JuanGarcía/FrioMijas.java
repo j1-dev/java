@@ -56,11 +56,25 @@ public class FrioMijas {
      * Mostrar si la contraseña de los jefes es no Fuerte
      */
 
+    System.out.println(jefe1.esFuerte());
+    System.out.println(jefe2.esFuerte());
+
     /*
      * HACER
      * Generar contraseña de 10 elementos que sea fuerte para cada uno de los jefes
      */
 
+    do {
+      jefe1.generaPassword(10);
+    } while (!jefe1.esFuerte());
+
+    System.out.println(jefe1);
+
+    do {
+      jefe2.generaPassword(10);
+    } while (!jefe2.esFuerte());
+
+    System.out.println(jefe2);
     /*
      * HACER *
      * Empleados de la sede2 con sueldo entre 500 y 1500
@@ -73,5 +87,4 @@ public class FrioMijas {
      */
 
   }
-
 }

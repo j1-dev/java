@@ -66,4 +66,10 @@ public class Personal {
     this.id = id;
   }
 
+  @Override
+  public String toString() {
+    return "Personal [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + ", dni=" + dni + ", salario="
+        + salario + ", id=" + id + "]";
+  }
+
 }
