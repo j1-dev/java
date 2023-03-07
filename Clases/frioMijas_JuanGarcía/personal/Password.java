@@ -42,15 +42,16 @@ class Password {
     int contMinus = 0;
 
     for (int i = 0; i < password.length(); i++) {
-      if ((char) password.charAt(i) >= 65 && (char) password.charAt(i) <= 90)
+      if ((char) password.charAt(i) >= 65 && (char) password.charAt(i) <= 90) {
         contMayus++;
-      if ((char) password.charAt(i) >= 97 && (char) password.charAt(i) <= 122)
+      } else if ((char) password.charAt(i) >= 97 && (char) password.charAt(i) <= 122) {
         contMinus++;
-      if ((char) password.charAt(i) >= 48 && (char) password.charAt(i) <= 57)
+      } else {
         contNums++;
+      }
     }
 
-    return (contMayus > 2 && contNums > 5 && contMinus > 1);
+    return (contMayus > 2 && contNums >= 5 && contMinus > 1);
   }
 
   @Override
