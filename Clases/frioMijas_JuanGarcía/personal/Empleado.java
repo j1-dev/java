@@ -11,4 +11,10 @@ public class Empleado extends Personal {
     return "Empleado [" + super.toString() + "]";
   }
 
+  @Override
+  public boolean equals(Object pers) {
+    Empleado emp = (Empleado) pers;
+    return this.getDni().equals(emp.getDni());
+  }
+
 }

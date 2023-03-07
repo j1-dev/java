@@ -85,12 +85,22 @@ public class Sede {
   }
 
   public void addEmpleado(Empleado emp) {
-    Empleado[] newArr = new Empleado[empleados.length + 1];
-    for (int i = 0; i < empleados.length; i++) {
-      newArr[i] = empleados[i];
+    boolean dup = false;
+    for (int i = 0; i < empleados.length && !dup; i++) {
+      if (empleados[i].equals(emp)) {
+        dup = true;
+      }
     }
-    newArr[empleados.length] = emp;
-    empleados = newArr;
+
+    if (!dup) {
+      Empleado[] newArr = new Empleado[empleados.length + 1];
+      for (int i = 0; i < empleados.length; i++) {
+        newArr[i] = empleados[i];
+      }
+      newArr[empleados.length] = emp;
+      empleados = newArr;
+    }
+
   }
 
   @Override

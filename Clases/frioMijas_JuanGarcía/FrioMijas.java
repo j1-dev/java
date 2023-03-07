@@ -79,6 +79,12 @@ public class FrioMijas {
      * HACER *
      * Empleados de la sede2 con sueldo entre 500 y 1500
      */
+    Empleado[] aux = sede2.getEmpleados();
+    for (int i = 0; i < aux.length; i++) {
+      if (aux[i].getSalario() >= 500 && aux[i].getSalario() <= 1500) {
+        System.out.println(aux[i]);
+      }
+    }
 
     /*
      * HACER *
