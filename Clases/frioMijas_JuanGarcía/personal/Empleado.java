@@ -8,7 +8,12 @@ public class Empleado extends Personal {
 
   @Override
   public String toString() {
-    return "Empleado [" + super.toString() + "]";
+    String str = "";
+
+    str += "--Empleado--\n";
+    str += super.toString();
+
+    return str;
   }
 
   @Override

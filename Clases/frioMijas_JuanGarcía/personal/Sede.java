@@ -2,6 +2,8 @@ package Clases.frioMijas_JuanGarcía.personal;
 
 import java.util.Arrays;
 
+import Clases.frioMijas_JuanGarcía.equipos.Electrodomestico;
+
 public class Sede {
   private String ciudad;
   private String direccion;
@@ -9,6 +11,7 @@ public class Sede {
   private int codigoSede;
   private Jefe jefe;
   private Empleado[] empleados;
+  private Electrodomestico[] electrodomesticos;
   private static int cont = 0;
 
   public Sede(String ciudad, String direccion, int cp, Jefe jefe) {
@@ -18,6 +21,7 @@ public class Sede {
     this.codigoSede = cont++;
     this.jefe = jefe;
     this.empleados = new Empleado[0];
+    this.electrodomesticos = new Electrodomestico[0];
   }
 
   public Sede(String ciudad, String direccion, int cp) {
@@ -26,6 +30,8 @@ public class Sede {
     this.cp = cp;
     this.codigoSede = cont++;
     this.empleados = new Empleado[0];
+    this.electrodomesticos = new Electrodomestico[0];
+
   }
 
   public Jefe getJefe() {
@@ -84,6 +90,25 @@ public class Sede {
     Sede.cont = cont;
   }
 
+  public void asignaElectrodomestico(Electrodomestico el) {
+    boolean dup = false;
+    for (int i = 0; i < electrodomesticos.length && !dup; i++) {
+      if (electrodomesticos[i].equals(el)) {
+        dup = true;
+      }
+    }
+
+    if (!dup) {
+      Electrodomestico[] newArr = new Electrodomestico[electrodomesticos.length + 1];
+      for (int i = 0; i < electrodomesticos.length; i++) {
+        newArr[i] = electrodomesticos[i];
+      }
+      newArr[electrodomesticos.length] = el;
+      electrodomesticos = newArr;
+    }
+
+  }
+
   public void addEmpleado(Empleado emp) {
     boolean dup = false;
     for (int i = 0; i < empleados.length && !dup; i++) {
@@ -105,8 +130,18 @@ public class Sede {
 
   @Override
   public String toString() {
-    return "Sede [ciudad=" + ciudad + ", direccion=" + direccion + ", cp=" + cp + ", codigoSede=" + codigoSede
-        + ", jefe=" + jefe.toString() + ", empleados=" + Arrays.toString(empleados) + "]";
+    String str = "";
+
+    str += "--Sede--" + ",\n";
+    str += "ciudad " + ciudad + ",\n";
+    str += "direccion: " + direccion + ",\n";
+    str += "cp: " + cp + ",\n";
+    str += "codigoSede: " + codigoSede + ",\n";
+    str += "jefe: " + jefe + ",\n";
+    str += "empleados: \n" + Arrays.toString(empleados);
+    str += "electrodomesticos: \n" + Arrays.toString(electrodomesticos);
+
+    return str;
   }
 
 }

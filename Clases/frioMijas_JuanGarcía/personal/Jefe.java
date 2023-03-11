@@ -30,6 +30,12 @@ public class Jefe extends Personal {
 
   @Override
   public String toString() {
-    return "Jefe [password=" + password + " " + super.toString() + "]";
+    String str = "";
+
+    str += "--Jefe--\n";
+    str += "password:" + password + "\n";
+    str += super.toString();
+
+    return str;
   }
 }

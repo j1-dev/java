@@ -56,7 +56,11 @@ class Password {
 
   @Override
   public String toString() {
-    return "Password [password=" + password + "]";
+    String str = "";
+
+    str += password;
+
+    return str;
   }
 
 }

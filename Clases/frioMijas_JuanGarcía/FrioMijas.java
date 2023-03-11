@@ -91,6 +91,19 @@ public class FrioMijas {
      * Crea 5 equipos frigorificos diferentes y asignalos a la 2º sede y muéstralos
      * a continuación
      */
+    Camara elec1 = new Camara(12, 24, 34, 1500, "Bosch", -12);
+    Frigorifico elec2 = new Frigorifico(32, 45, 64, 3422, "Samsung");
+    Minibar elec3 = new Minibar(32, 45, 32, 2000, "Siemens", 4);
+    Arcon elec4 = new Arcon(70, 24, 20, 1400, "Balay", "laterla");
+    Frigorifico elec5 = new Frigorifico(70, 40, 60, 4500, "Fagor");
+
+    sede2.asignaElectrodomestico(elec1);
+    sede2.asignaElectrodomestico(elec2);
+    sede2.asignaElectrodomestico(elec3);
+    sede2.asignaElectrodomestico(elec4);
+    sede2.asignaElectrodomestico(elec5);
+
+    System.out.println(sede2);
 
   }
 }

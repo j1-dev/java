@@ -68,8 +68,16 @@ public class Personal {
 
   @Override
   public String toString() {
-    return "Personal [nombre=" + nombre + ", apellidos=" + apellidos + ", edad=" + edad + ", dni=" + dni + ", salario="
-        + salario + ", id=" + id + "]";
+    String str = "";
+
+    str += "nombre: " + nombre + ",\n";
+    str += "apellidos: " + apellidos + ",\n";
+    str += "edad: " + edad + ",\n";
+    str += "dni: " + dni + ",\n";
+    str += "salario: " + salario + ",\n";
+    str += "id: " + id + ",\n";
+
+    return str;
   }
 
 }
