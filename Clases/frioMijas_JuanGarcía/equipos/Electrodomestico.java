@@ -1,6 +1,7 @@
 package Clases.frioMijas_JuanGarcía.equipos;
 
 public abstract class Electrodomestico {
+<<<<<<< HEAD
   private double alto;
   private double ancho;
   private double profundidad;
@@ -73,4 +74,7 @@ public abstract class Electrodomestico {
   }
 
   public abstract double consumo();
+=======
+  
+>>>>>>> 45571ae (14 mar. (PI day :tada:))
 }

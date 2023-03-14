@@ -1,13 +1,11 @@
 package Clases.ClasesEJ;
 
-public class Cliente {
+public class Cliente implements Comparable {
   private String nombre;
-  private Accion accion;
   private double importe;
 
-  public Cliente(String nombre, Accion accion, double importe) {
+  public Cliente(String nombre, double importe) {
     this.nombre = nombre;
-    this.accion = accion;
     this.importe = importe;
   }
 
@@ -17,14 +15,6 @@ public class Cliente {
 
   public void setNombre(String nombre) {
     this.nombre = nombre;
-  }
-
-  public Accion getAccion() {
-    return accion;
-  }
-
-  public void setAccion(Accion accion) {
-    this.accion = accion;
   }
 
   public double getImporte() {
@@ -37,7 +27,19 @@ public class Cliente {
 
   @Override
   public String toString() {
-    return "Cliente [nombre=" + nombre + ", accion=" + accion + ", importe=" + importe + "]";
+    return "Cliente [nombre= " + nombre + ", importe= " + importe + "]";
+  }
+
+  @Override
+  public int compareTo(Object o) {
+    Cliente c = (Cliente) o;
+    // Ordenacion por dinero
+    // Double dineroTotal = importe;
+    // return (dineroTotal.compareTo(c.getImporte()));
+    // Ordenacion por nombre
+
+    String nombre = c.getNombre();
+    return nombre.compareTo(c.getNombre());
   }
 
 }
