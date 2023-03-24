@@ -19,29 +19,38 @@ public class UsoAcademico {
 
     // Insercion academicos
 
+    nuevoAcademico(mapaAcademicos, 'e', a5);
+    nuevoAcademico(mapaAcademicos, 'd', a4);
+    nuevoAcademico(mapaAcademicos, 'c', a3);
     nuevoAcademico(mapaAcademicos, 'a', a1);
     nuevoAcademico(mapaAcademicos, 'b', a2);
-    nuevoAcademico(mapaAcademicos, 'c', a3);
-    nuevoAcademico(mapaAcademicos, 'd', a4);
-    nuevoAcademico(mapaAcademicos, 'e', a5);
 
     arrayAcademicos.addAll(mapaAcademicos.values());
 
     // Listado ordenado por nombre sin letra
 
     Collections.sort(arrayAcademicos);
+
     System.out.println(arrayAcademicos);
 
     // Listado ordenado por año de ingreso
 
-    arrayAcademicos.sort((arg0, arg1) -> {
+    Collections.sort(arrayAcademicos, (arg0, arg1) -> {
       return arg0.getAnioIngreso() - arg1.getAnioIngreso();
     });
+
     System.out.println(arrayAcademicos);
 
     // Listado ordenado por letra
+    ArrayList<Character> listaLetras = new ArrayList<>();
+    listaLetras.addAll(mapaAcademicos.keySet());
+    Collections.sort(listaLetras);
 
-    System.out.println(mapaAcademicos);
+    for (Character c : listaLetras) {
+      System.out.println(c + " -> " + mapaAcademicos.get(c));
+    }
+
+    // TreeMap<Character, Academico> tree = new TreeMap<>(mapaAcademicos)
 
   }
 
