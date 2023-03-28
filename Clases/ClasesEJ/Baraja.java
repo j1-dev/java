@@ -6,7 +6,7 @@ public class Baraja {
   public Baraja() {
     cartas = new Carta[0];
     for (int i = 0; i < Palo.values().length; i++) {
-      for (int j = 0; j < 12; j++) {
+      for (int j = 0; j < 10; j++) {
         Carta carta = new Carta(Palo.values()[i], j + 1);
         push(carta);
       }
