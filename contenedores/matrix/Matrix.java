@@ -36,8 +36,15 @@ public class Matrix {
         Personaje p = matrix.get(i);
         if (p instanceof Humano) {
           Humano h = (Humano) p;
-          if (h.getProbMorir() <= 30) {
-            matrix.set(i, null);
+          if (h.getProbMorir() <= 10) {
+            if (l.size() > 0) {
+              matrix.set(i, l.remove(0));
+            } else {
+              l = MatrixUtils.FactoriaPersonas(200);
+              matrix.set(i, l.remove(0));
+            }
+          } else {
+            h.setProbMorir(h.getProbMorir() - 10);
           }
         }
       }
@@ -55,10 +62,13 @@ public class Matrix {
       }
 
       if (cont % 30 == 0) {
-
+        System.out.println("--INFO--");
+        for (int i = 0; i < matrixLength; i++) {
+          System.out.println(matrix.get(i).mostrarInformacion());
+        }
+        System.out.println(imprimirMatrix(matrix).toString());
       }
       cont++;
-      System.out.println(imprimirMatrix(matrix).toString());
 
     }
 
