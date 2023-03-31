@@ -1,29 +1,28 @@
 package contenedores.matrix;
 
-import java.sql.Date;
-import java.sql.Time;
+import java.util.Date;
 
 public class Smith extends Personaje {
-  private int infectionPower;
+  private int poderDeInfeccion;
 
-  public Smith(int id, String nombre, String ciudad, Date fechaCreacion, Time horaCreacion, int edad, int probMorir,
-      int infectionPower) {
-    super(id, nombre, ciudad, fechaCreacion, horaCreacion, edad, probMorir);
-    this.infectionPower = infectionPower;
+  public Smith(int id, String nombre, String ciudad, Date fechaCreacion, long horaCreacion, int edad,
+      int poderDeInfeccion) {
+    super(id, nombre, ciudad, fechaCreacion, horaCreacion, edad);
+    this.poderDeInfeccion = poderDeInfeccion;
   }
 
-  public int getInfectionPower() {
-    return infectionPower;
+  public int getpoderDeInfeccion() {
+    return poderDeInfeccion;
   }
 
-  public void setInfectionPower(int infectionPower) {
-    this.infectionPower = infectionPower;
+  public void setpoderDeInfeccion(int poderDeInfeccion) {
+    this.poderDeInfeccion = poderDeInfeccion;
   }
 
   @Override
   public String mostrarInformacion() {
-    // TODO Auto-generated method stub
-    return super.toString() + "\n---AGENTE SMITH { Poder de infecction: " + infectionPower + " }---";
+    String toStringNotClosed = (String) super.toString().subSequence(0, this.toString().length() - 1);
+    return toStringNotClosed + "\tPoder de infección: " + poderDeInfeccion + "\n\t}";
   }
 
 }

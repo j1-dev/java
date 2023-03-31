@@ -1,26 +1,22 @@
 package contenedores.matrix;
 
-import java.sql.Time;
-import java.sql.Date;
+import java.util.Date;
 
 public abstract class Personaje {
   private int id;
   private String nombre;
   private String ciudad;
   private Date fechaCreacion;
-  private Time horaCreacion;
+  private long horaCreacion;
   private int edad;
-  private int probMorir;
 
-  public Personaje(int id, String nombre, String ciudad, Date fechaCreacion, Time horaCreacion, int edad,
-      int probMorir) {
+  public Personaje(int id, String nombre, String ciudad, Date fechaCreacion, long horaCreacion, int edad) {
     this.id = id;
     this.nombre = nombre;
     this.ciudad = ciudad;
     this.fechaCreacion = fechaCreacion;
     this.horaCreacion = horaCreacion;
     this.edad = edad;
-    this.probMorir = probMorir;
   }
 
   public int getId() {
@@ -55,11 +51,11 @@ public abstract class Personaje {
     this.fechaCreacion = fechaCreacion;
   }
 
-  public Time getHoraCreacion() {
+  public long getHoraCreacion() {
     return horaCreacion;
   }
 
-  public void setHoraCreacion(Time horaCreacion) {
+  public void setHoraCreacion(long horaCreacion) {
     this.horaCreacion = horaCreacion;
   }
 
@@ -71,18 +67,10 @@ public abstract class Personaje {
     this.edad = edad;
   }
 
-  public int getProbMorir() {
-    return probMorir;
-  }
-
-  public void setProbMorir(int probMorir) {
-    this.probMorir = probMorir;
-  }
-
   @Override
   public String toString() {
-    return id + ": -> [\n\tnombre=" + nombre + "\n\tciudad=" + ciudad + "\n\tfechaCreacion=" + fechaCreacion
-        + "\n\thoraCreacion=" + horaCreacion + "\n\tedad=" + edad + "\n\tprobMorir=" + probMorir + "\n]";
+    return id + ": -> {\n\t\tnombre: " + nombre + "\n\t\tciudad: " + ciudad + "\n\t\tfechaCreacion: " + fechaCreacion
+        + "\n\t\thoraCreacion: " + horaCreacion + "\n\t\tedad: " + edad + "\n\t}";
   }
 
   public abstract String mostrarInformacion();
