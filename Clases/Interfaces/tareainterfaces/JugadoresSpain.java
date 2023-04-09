@@ -33,16 +33,16 @@ public class JugadoresSpain {
     // (Math.random() * 10),
     // (int) (Math.random() * 10));
 
-    while (c < 7) {
-      jugadores.add(new Jugador(generaNombre(), generaApodo(), c++, (int) (Math.random() * 10),
-          (int) (Math.random() * 10)));
-    }
-
     // jugadores.add(j1);
     // jugadores.add(j2);
     // jugadores.add(j3);
     // jugadores.add(j4);
     // jugadores.add(j5);
+
+    while (c < 7) {
+      jugadores.add(new Jugador(generaNombre(), generaApodo(), c++, (int) (Math.random() * 10),
+          (int) (Math.random() * 10)));
+    }
 
     System.out.println("\n---JUGADORES ORDENADOS POR NUMERO DE LICENCIA---\n");
     // Ordenados por numero de licencia
@@ -80,11 +80,11 @@ public class JugadoresSpain {
     String n = "";
 
     int c1, c2;
-    Pair nc;
+    Pair<Integer, Integer> nc;
     do {
       c1 = (int) (Math.random() * 10);
       c2 = (int) (Math.random() * 10);
-      nc = new Pair(c1, c2);
+      nc = new Pair<>(c1, c2);
     } while (cn.contains(nc));
 
     n += nombres[c1] + " " + apellidos[c2];
@@ -101,11 +101,11 @@ public class JugadoresSpain {
     String a = "";
 
     int c1, c2;
-    Pair ac;
+    Pair<Integer, Integer> ac;
     do {
       c1 = (int) (Math.random() * 12);
       c2 = (int) (Math.random() * 7);
-      ac = new Pair(c1, c2);
+      ac = new Pair<>(c1, c2);
     } while (ca.contains(ac));
 
     a += apodo1[c1] + " " + apodo2[c2];
