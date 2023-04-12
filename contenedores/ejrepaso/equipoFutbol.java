@@ -1,6 +1,5 @@
 package contenedores.ejrepaso;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -23,19 +22,42 @@ public class equipoFutbol {
     altaJugador(plantilla, 4, j4);
     altaJugador(plantilla, 5, j5);
 
+    // System.out.println("TODOS LOS JUGADORES");
+    // mostrar(plantilla);
+
+    // System.out.println("TODOS LOS DEFENSAS");
+    // mostrar(plantilla, "defensa");
+
+    // // Existe dorsal
+    // altaJugador(plantilla, 2);
+
+    // // No Existe dorsal
+    // altaJugador(plantilla, 6);
+
+    // // Existe dorsal
+    // eliminarJugador(plantilla, 2);
+
+    // // No Existe dorsal
+    // eliminarJugador(plantilla, 99);
+
     mostrar(plantilla);
-    mostrar(plantilla, "portero");
 
-    altaJugador(plantilla, 6);
-    altaJugador(plantilla, 7);
+    // Existe dorsal
+    editarJugador(plantilla, 3);
 
-    eliminarJugador(plantilla, 2);
+    // No existe dorsal
+    // editarJugador(plantilla, 99);
 
     mostrar(plantilla);
 
   }
 
   static void altaJugador(Map<Integer, Jugador> plantilla, Integer dorsal) {
+    while (plantilla.containsKey(dorsal)) {
+      System.out.println("Este dorsal ya está cogido introduzca otro");
+      dorsal = sc.nextInt();
+      sc.nextLine();
+    }
     System.out.println("Introduzca los datos del jugador " + dorsal);
     System.out.print("DNI -> ");
     String dni = sc.nextLine();
@@ -47,7 +69,7 @@ public class equipoFutbol {
       System.out.print("Posicion -> ");
       String pos = sc.nextLine();
       pos = pos.toUpperCase();
-      if (pos == "PORTERO" || pos == "DEFENSA" || pos == "CENTROCAMPISTA" || pos == "DELANTERO") {
+      if (pos.equals("PORTERO") || pos.equals("DEFENSA") || pos.equals("CENTROCAMPISTA") || pos.equals("DELANTERO")) {
         posicion = Posicion.valueOf(pos);
         valida = true;
       } else {
@@ -56,6 +78,7 @@ public class equipoFutbol {
     } while (valida == false);
     System.out.print("Altura -> ");
     float altura = sc.nextFloat();
+    sc.nextLine();
 
     plantilla.put(dorsal, new Jugador(dni, nombre, posicion, altura));
 
@@ -66,7 +89,12 @@ public class equipoFutbol {
   }
 
   static Jugador eliminarJugador(Map<Integer, Jugador> plantilla, Integer dorsal) {
-    return plantilla.remove(dorsal);
+    if (plantilla.containsKey(dorsal)) {
+      return plantilla.remove(dorsal);
+    } else {
+      System.out.println("No existe el jugador que quiere borrar");
+      return null;
+    }
   }
 
   static void mostrar(Map<Integer, Jugador> plantilla) {
@@ -82,8 +110,9 @@ public class equipoFutbol {
   static void mostrar(Map<Integer, Jugador> plantilla, String posicion) {
     boolean valida = true;
     Posicion posi = null;
-
-    if (posicion == "PORTERO" || posicion == "DEFENSA" || posicion == "CENTROCAMPISTA" || posicion == "DELANTERO") {
+    posicion = posicion.toUpperCase();
+    if (posicion.equals("PORTERO") || posicion.equals("DEFENSA") || posicion.equals("CENTROCAMPISTA")
+        || posicion.equals("DELANTERO")) {
       posi = Posicion.valueOf(posicion);
       valida = true;
     } else {
@@ -107,7 +136,48 @@ public class equipoFutbol {
 
   static boolean editarJugador(Map<Integer, Jugador> plantilla, Integer dorsal) {
     boolean editable = true;
-
+    Jugador j = plantilla.get(dorsal);
+    if (j != null) {
+      System.out.println("Va a editar al jugador " + dorsal + " (" + j.getNombre() + " )");
+      System.out.println("Qué atributo quiere editar? (1: nombre, 2: posicion, 3: estatura)");
+      int opcion = sc.nextInt();
+      sc.nextLine();
+      switch (opcion) {
+        case 1:
+          System.out.println("va a editar el nombre");
+          String nombre = sc.nextLine();
+          j.setNombre(nombre);
+          break;
+        case 2:
+          System.out.println("va a editar la posicion");
+          boolean valida = true;
+          Posicion posicion = null;
+          do {
+            String pos = sc.nextLine();
+            pos = pos.toUpperCase();
+            if (pos.equals("PORTERO") || pos.equals("DEFENSA") || pos.equals("CENTROCAMPISTA")
+                || pos.equals("DELANTERO")) {
+              posicion = Posicion.valueOf(pos);
+              valida = true;
+            } else {
+              valida = false;
+            }
+          } while (valida == false);
+          j.setPosicion(posicion);
+          break;
+        case 3:
+          System.out.println("va a editar la estatura");
+          float estatura = sc.nextFloat();
+          j.setEstatura(estatura);
+          break;
+        default:
+          System.out.println("opcion incorrecta");
+          editable = false;
+      }
+    } else {
+      editable = false;
+      System.out.println("El jugador con el dorsal " + dorsal + " no existe");
+    }
     return editable;
   }
 }
