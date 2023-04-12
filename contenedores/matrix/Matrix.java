@@ -11,12 +11,14 @@ public class Matrix {
     Neo neo = new Neo(999, "Neo", "Sevilla", new Date(), new Date().getTime(), 23, false, 100);
     Smith smith = new Smith(666, "Smith", "Oriuelas", new Date(), new Date().getTime(), 999, 50);
 
+    // Generar posiciones iniciales para Neo y Smith
     int posNeo, posSmith;
     posNeo = (int) (Math.random() * matrixLength);
     do {
       posSmith = (int) (Math.random() * matrixLength);
     } while (posSmith == posNeo);
 
+    // Poblar el array principal de matrix
     for (int i = 0; i < matrixLength; i++) {
       if (i == posNeo) {
         matrix.add(i, neo);
@@ -27,6 +29,7 @@ public class Matrix {
       matrix.add(l.remove(0));
     }
 
+    // Comienzo de la simulación
     System.out.println("--- COMIENZA EL JUEGO ---");
     final int maxIters = 300;
     int cont = 0;
@@ -50,7 +53,18 @@ public class Matrix {
       }
 
       if (cont % 2 == 0) {
-
+        for (int i = 0; i < matrixLength; i++) {
+          if (matrix.get(i) instanceof Smith) {
+            Smith s = (Smith) matrix.get(i);
+            int poderInfeccion = (int) (Math.random() * s.getpoderDeInfeccion());
+            int infeccionStart = (i - poderInfeccion <= 0 ? 0 : i - poderInfeccion);
+            int infeccionEnd = (i + poderInfeccion >= matrixLength ? matrixLength : i + poderInfeccion);
+            for (int j = infeccionStart; j < infeccionEnd; j++) {
+              if (matrix.get(j) instanceof Humano)
+                matrix.set(j, s.infectar((Humano) matrix.get(j)));
+            }
+          }
+        }
       }
 
       if (cont % 5 == 0) {
@@ -63,9 +77,9 @@ public class Matrix {
 
       if (cont % 30 == 0) {
         System.out.println("--INFO--");
-        for (int i = 0; i < matrixLength; i++) {
-          System.out.println(matrix.get(i).mostrarInformacion());
-        }
+        // for (int i = 0; i < matrixLength; i++) {
+        // System.out.println(matrix.get(i).mostrarInformacion());
+        // }
         System.out.println(imprimirMatrix(matrix).toString());
       }
       cont++;

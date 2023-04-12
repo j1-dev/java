@@ -11,12 +11,21 @@ public class Smith extends Personaje {
     this.poderDeInfeccion = poderDeInfeccion;
   }
 
+  public Smith(Humano h, int poderDeInfeccion) {
+    super(h.getId(), h.getNombre(), h.getCiudad(), h.getFechaCreacion(), h.getHoraCreacion(), h.getEdad());
+    this.poderDeInfeccion = poderDeInfeccion;
+  }
+
   public int getpoderDeInfeccion() {
     return poderDeInfeccion;
   }
 
   public void setpoderDeInfeccion(int poderDeInfeccion) {
     this.poderDeInfeccion = poderDeInfeccion;
+  }
+
+  public Smith infectar(Humano h) {
+    return new Smith(h, 3);
   }
 
   @Override
