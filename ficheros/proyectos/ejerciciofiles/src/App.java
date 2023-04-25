@@ -3,6 +3,8 @@ package ficheros.proyectos.ejerciciofiles.src;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.util.Scanner;
+import clases.Log;
+import clases.Log.TipoMensaje;
 
 public class App {
   public static void main(String[] args) throws Exception {
@@ -28,14 +30,18 @@ public class App {
             total += d;
           }
           System.out.println("Linea " + lineNum + " = " + total);
+          Log.NuevaEntradaALog("Linea " + lineNum + " = " + total, TipoMensaje.INFORMACION);
         } catch (Exception e) {
           System.out.println("Linea " + lineNum + " vacia.");
+          Log.NuevaEntradaALog("Linea " + lineNum + " vacia.", TipoMensaje.ERROR);
+
         }
         line = br.readLine();
         lineNum++;
       }
     } catch (Exception e) {
-      System.out.println(e.toString());
+      Log.NuevaEntradaALog(e.toString(), TipoMensaje.ERROR);
+
     } finally {
       fr.close();
       br.close();
