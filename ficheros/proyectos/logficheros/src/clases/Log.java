@@ -12,7 +12,7 @@ public class Log {
   }
 
   public static void NuevaEntradaALog(String mensaje, TipoMensaje tipo) throws Exception {
-    String rutaAFicheroLog = "src/log.txt";
+    String rutaAFicheroLog = "/src/log.txt";
     FileWriter fw = null;
     BufferedWriter bw = null;
     try {
