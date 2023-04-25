@@ -2,5 +2,8 @@
   "java.project.referencedLibraries": [
     "lib/**/*.jar",
     "ficheros/proyectos/logficheros/logficheros.jar"
+  ],
+  "java.project.sourcePaths": [
+    "ficheros/proyectos/tareaMunicipios/src"
   ]
 }
