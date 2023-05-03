@@ -1,0 +1,21 @@
+[
+  {
+    "marca": "Renault",
+    "modelo": "Megane",
+    "anioFabricacion": 2019,
+    "precio": 15000.0
+  },
+  {
+    "marca": "Ford",
+    "modelo": "Focus",
+    "anioFabricacion": 2010,
+    "precio": 5000.0
+  },
+  {
+    "marca": "Toyota",
+    "modelo": "Yaris",
+    "anioFabricacion": 2020,
+    "precio": 12000.0
+  }
+
+]
