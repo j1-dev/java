@@ -4,6 +4,6 @@
     "ficheros/proyectos/logficheros/logficheros.jar"
   ],
   "java.project.sourcePaths": [
-    "ficheros/proyectos/tareaMunicipios/src"
+    "ficheros/proyectos/JsonJacksonExample/src"
   ]
 }
