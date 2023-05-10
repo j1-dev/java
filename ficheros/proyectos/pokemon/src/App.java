@@ -14,14 +14,14 @@ public class App {
         System.out.println("==============================================");
 
         // Leer Json que contiene 1 array de objetos y convertirlo en un list<objeto>
-        Pokemon[] listaPokemon = jsonUtils.ReadPokemonListFromJsonFile("src/recursos/pokemon.json");
+        Pokedex pokedex = jsonUtils.ReadPokemonListFromJsonFile("src/recursos/pokemon.json");
         // ArrayList<Pokemon> nuevaListaPokemon = new ArrayList<>(listaPokemon);
 
         // Pokedex pokedex = new Pokedex(nuevaListaPokemon);
 
         System.out.println("====== ARRAY EMPLEADOS =======================");
 
-        for (Pokemon pokemon : listaPokemon) {
+        for (Pokemon pokemon : pokedex.getLista()) {
             System.out.println(pokemon);
         }
 

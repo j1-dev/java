@@ -21,6 +21,9 @@ public class Pokemon {
   private ArrayList<String> weaknesses;
   private HashMap<String, String> nextEvolution;
 
+  public Pokemon() {
+  }
+
   public Pokemon(Integer id, String num, String name, String img, ArrayList<String> type, String height, String weight,
       String candy, Integer candyCount, String egg, Double spawnChance, Integer avgSpawns, String spawnTime,
       ArrayList<Double> multipliers, ArrayList<String> weaknesses, HashMap<String, String> nextEvolution) {

@@ -42,20 +42,20 @@ public class jsonUtils {
 
   }
 
-  public static Pokemon[] ReadPokemonListFromJsonFile(String relativePathFile) {
+  public static Pokedex ReadPokemonListFromJsonFile(String relativePathFile) {
     File ficheroPokemon = new File(relativePathFile);
 
     ObjectMapper objectMapper = new ObjectMapper();
 
-    Pokemon[] listaPokemon = null;
+    Pokedex pokedex = null;
     try {
-      listaPokemon = objectMapper.readValue(ficheroPokemon, Pokemon[].class);
+      pokedex = objectMapper.readValue(ficheroPokemon, Pokedex.class);
     } catch (IOException e) {
 
       e.printStackTrace();
     }
 
-    return listaPokemon;
+    return pokedex;
   }
 
   /**
