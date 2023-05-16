@@ -1,0 +1,240 @@
+[
+  {
+    "nombre": "Chris Froome",
+    "codigoEquipo": "TEIN",
+    "peso": 69,
+    "pais": "Gbr"
+  },
+  {
+    "nombre": "Egan Bernal",
+    "codigoEquipo": "TEIN",
+    "peso": 60,
+    "pais": "Col"
+  },
+  {
+    "nombre": "Geraint Thomas",
+    "codigoEquipo": "TEIN",
+    "peso": 71,
+    "pais": "Gbr"
+  },
+  {
+    "nombre": "Richard Carapaz",
+    "codigoEquipo": "TEIN",
+    "peso": 62,
+    "pais": "Ecu"
+  },
+  {
+    "nombre": "Michal Kwiatkowski",
+    "codigoEquipo": "TEIN",
+    "peso": 73,
+    "pais": "Pol"
+  },
+  {
+    "nombre": "Gianni Moscon",
+    "codigoEquipo": "TEIN",
+    "peso": 68,
+    "pais": "Ita"
+  },
+  {
+    "nombre": "Luke Rowe",
+    "codigoEquipo": "TEIN",
+    "peso": 73,
+    "pais": "Gbr"
+  },
+  {
+    "nombre": "Tao Geoghegan Hart",
+    "codigoEquipo": "TEIN",
+    "peso": 63,
+    "pais": "Gbr"
+  },
+  {
+    "nombre": "Julian Alaphilippe",
+    "codigoEquipo": "DEQU",
+    "peso": 61,
+    "pais": "Fra"
+  },
+  {
+    "nombre": "Mark Cavendish",
+    "codigoEquipo": "DEQU",
+    "peso": 70,
+    "pais": "Gbr"
+  },
+  {
+    "nombre": "Remco Evenepoel",
+    "codigoEquipo": "DEQU",
+    "peso": 64,
+    "pais": "Bel"
+  },
+  {
+    "nombre": "Zdenek Stybar",
+    "codigoEquipo": "DEQU",
+    "peso": 75,
+    "pais": "Cze"
+  },
+  {
+    "nombre": "Kasper Asgreen",
+    "codigoEquipo": "DEQU",
+    "peso": 76,
+    "pais": "Dnk"
+  },
+  {
+    "nombre": "Fabio Jakobsen",
+    "codigoEquipo": "DEQU",
+    "peso": 68,
+    "pais": "Nld"
+  },
+  {
+    "nombre": "Yves Lampaert",
+    "codigoEquipo": "DEQU",
+    "peso": 72,
+    "pais": "Bel"
+  },
+  {
+    "nombre": "Bob Jungels",
+    "codigoEquipo": "DEQU",
+    "peso": 70,
+    "pais": "Lux"
+  },
+
+  {
+    "nombre": "Peter Sagan",
+    "codigoEquipo": "BOHA",
+    "peso": 73,
+    "pais": "Svk"
+  },
+  {
+    "nombre": "Emmanuel Buchmann",
+    "codigoEquipo": "BOHA",
+    "peso": 63,
+    "pais": "Ger"
+  },
+  {
+    "nombre": "Lennard Kämna",
+    "codigoEquipo": "BOHA",
+    "peso": 69,
+    "pais": "Ger"
+  },
+  {
+    "nombre": "Emanuel Buchmann",
+    "codigoEquipo": "BOHA",
+    "peso": 67,
+    "pais": "Ger"
+  },
+  {
+    "nombre": "Felix Großschartner",
+    "codigoEquipo": "BOHA",
+    "peso": 65,
+    "pais": "Aut"
+  },
+  {
+    "nombre": "Wilco Kelderman",
+    "codigoEquipo": "BOHA",
+    "peso": 70,
+    "pais": "Ned"
+  },
+  {
+    "nombre": "Giovanni Aleotti",
+    "codigoEquipo": "BOHA",
+    "peso": 65,
+    "pais": "Ita"
+  },
+  {
+    "nombre": "Maximilian Schachmann",
+    "codigoEquipo": "BOHA",
+    "peso": 68,
+    "pais": "Ger"
+  } ,
+
+  {
+    "nombre": "Ben O'Connor",
+    "codigoEquipo": "AGLA",
+    "peso": 64,
+    "pais": "Aus"
+  },
+  {
+    "nombre": "Aurélien Paret-Peintre",
+    "codigoEquipo": "AGLA",
+    "peso": 62,
+    "pais": "Fra"
+  },
+  {
+    "nombre": "Bob Jungels",
+    "codigoEquipo": "AGLA",
+    "peso": 70,
+    "pais": "Lux"
+  },
+  {
+    "nombre": "Clement Champoussin",
+    "codigoEquipo": "AGLA",
+    "peso": 63,
+    "pais": "Fra"
+  },
+  {
+    "nombre": "Stan Dewulf",
+    "codigoEquipo": "AGLA",
+    "peso": 68,
+    "pais": "Bel"
+  },
+  {
+    "nombre": "Caleb Ewan",
+    "codigoEquipo": "LOSO",
+    "peso": 65,
+    "pais": "Aus"
+  },
+  {
+    "nombre": "John Degenkolb",
+    "codigoEquipo": "LOSO",
+    "peso": 78,
+    "pais": "Ger"
+  },
+  {
+    "nombre": "Philippe Gilbert",
+    "codigoEquipo": "LOSO",
+    "peso": 70,
+    "pais": "Bel"
+  },
+  {
+    "nombre": "Thomas De Gendt",
+    "codigoEquipo": "LOSO",
+    "peso": 67,
+    "pais": "Bel"
+  },
+  {
+    "nombre": "Tim Wellens",
+    "codigoEquipo": "LOSO",
+    "peso": 64,
+    "pais": "Bel"
+  } ,
+  {
+    "nombre": "Rigoberto Uran",
+    "codigoEquipo": "EFED",
+    "peso": 62,
+    "pais": "Col"
+  },
+  {
+    "nombre": "Michael Woods",
+    "codigoEquipo": "EFED",
+    "peso": 60,
+    "pais": "Can"
+  },
+  {
+    "nombre": "Magnus Cort",
+    "codigoEquipo": "EFED",
+    "peso": 69,
+    "pais": "Den"
+  },
+  {
+    "nombre": "Sergio Higuita",
+    "codigoEquipo": "EFED",
+    "peso": 59,
+    "pais": "Col"
+  },
+  {
+    "nombre": "Lachlan Morton",
+    "codigoEquipo": "EFED",
+    "peso": 66,
+    "pais": "Aus"
+  }
+
+
+]
