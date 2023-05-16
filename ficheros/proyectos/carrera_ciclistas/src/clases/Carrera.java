@@ -9,26 +9,57 @@ public class Carrera {
     private ArrayList<Corredor> corredores;
     private ArrayList<Equipo> equipos;
 
-    //Dado un conjunto de ciclistas se crean los
-    //corredores correspondientes, se les asignan dorsales correlativos desde el 1 en adelante.
-    public Carrera(List<Ciclista> ciclistas , String nombre){}
+    // Dado un conjunto de ciclistas se crean los
+    // corredores correspondientes, se les asignan dorsales correlativos desde el 1
+    // en adelante.
+    public Carrera(List<Ciclista> ciclistas, String nombre, List<Equipo> equipos) {
+        this.nombre = nombre;
 
-    public void insertarTiemposEtapa(Map<Integer, Integer> tiempos){}
+        int contador = 0;
+        for (Ciclista ciclista : ciclistas) {
+            Corredor c = new Corredor(ciclista.getNombre(),
+                    ciclista.getCodigoEquipo(),
+                    ciclista.getPeso(),
+                    ciclista.getPais(),
+                    contador++,
+                    null);
+            corredores.add(c);
+        }
 
-    public void ordenarCorredoresPorTiempo() {}
+        this.equipos = equipos;
+    }
 
-    public Corredor buscarCorredorPorDorsal(int dorsal) {return null;}
+    public void insertarTiemposEtapa(Map<Integer, Integer> tiempos) {
+    }
 
-    public Integer posicionCorredor(Corredor c) {return null;}
+    public void ordenarCorredoresPorTiempo() {
+    }
+
+    public Corredor buscarCorredorPorDorsal(int dorsal) {
+        return null;
+    }
+
+    public Integer posicionCorredor(Corredor c) {
+        return null;
+    }
 
     // Devuelve el pelotón completo ordenado por tiempo, cada
-    // linea será un ciclista con este formato: “dorsal – NombreCiclista (codEquipo) : tiempo”
-    public String clasificacionCompleta(){return null;}
+    // linea será un ciclista con este formato: “dorsal – NombreCiclista (codEquipo)
+    // : tiempo”
+    public String clasificacionCompleta() {
+        return null;
+    }
 
-    //Para calcular la clasificación por equipos se toman los
-    //3 mejores corredores de cada equipo y se suman sus tiempo. (Puede haber equipos que no
-    //tienen corredores en alguna carrera en tal caso no deben aparecer en el resultado).
-    public String clasificacionPorEquipos(){return null;}
+    // Para calcular la clasificación por equipos se toman los
+    // 3 mejores corredores de cada equipo y se suman sus tiempo. (Puede haber
+    // equipos que no
+    // tienen corredores en alguna carrera en tal caso no deben aparecer en el
+    // resultado).
+    public String clasificacionPorEquipos() {
+        return null;
+    }
 
-    public String podium(){return null;}
+    public String podium() {
+        return null;
+    }
 }
