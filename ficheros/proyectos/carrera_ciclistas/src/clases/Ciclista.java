@@ -6,8 +6,9 @@ public class Ciclista {
     private Integer peso;
     private String pais;
 
+    public Ciclista() {
+    }
 
-    public Ciclista(){}
     public Ciclista(String nombre, String codigoEquipo, Integer peso, String pais) {
         this.nombre = nombre;
         this.codigoEquipo = codigoEquipo;
@@ -49,11 +50,11 @@ public class Ciclista {
 
     @Override
     public String toString() {
-        return "Ciclista{" +
-                "nombre='" + nombre + "'\n" +
-                ", codigoEquipo='" + codigoEquipo + "'\n" +
-                ", peso=" + peso + "'\n" +
-                ", pais='" + pais + "'\n" +
+        return "{\n" +
+                "\tnombre='" + nombre + "'\n" +
+                "\tcodigoEquipo='" + codigoEquipo + "'\n" +
+                "\tpeso=" + peso + "'\n" +
+                "\tpais='" + pais + "'\n" +
                 '}';
     }
 }

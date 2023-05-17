@@ -15,7 +15,6 @@ public class Etapa {
   public Etapa(int num, String path) {
     numEtapa = num;
     tiemposDorsal = jsonUtils.ReadEtapaFromJsonFile(path);
-    System.out.println(tiemposDorsal.toString());
   }
 
   public Map<Integer, Integer> getTiemposDorsal() {

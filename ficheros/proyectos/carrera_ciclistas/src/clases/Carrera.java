@@ -61,6 +61,7 @@ public class Carrera {
     public Corredor buscarCorredorPorDorsal(int dorsal) {
         for (Corredor corredor : corredores) {
             if (corredor.getDorsal().equals(dorsal)) {
+                System.out.println(corredor.toString());
                 return corredor;
             }
         }
@@ -84,11 +85,13 @@ public class Carrera {
     // : tiempo”
     public String clasificacionCompleta() {
         String str = "";
+        int contador = 1;
 
         ordenarCorredoresPorTiempo();
 
         for (Corredor corredor : corredores) {
-            str += corredor.getDorsal() + " - " + corredor.getNombre() + " (" + corredor.getCodigoEquipo() + "): "
+            str += "posicion " + contador++ + ": " + corredor.getDorsal() + " - " + corredor.getNombre() + " ("
+                    + corredor.getCodigoEquipo() + "): "
                     + corredor.getTiempo() + "\n";
         }
 
