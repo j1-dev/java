@@ -25,5 +25,8 @@ public class Corredor extends Ciclista {
     public void setTiempo(Integer tiempo) {
         this.tiempo = tiempo;
     }
-}
 
+    public String toString() {
+        return tiempo.toString();
+    }
+}
