@@ -104,7 +104,7 @@ public class Evento {
 
   @Override
   public String toString() {
-    return "Evento [id=" + id + ", type=" + type + ", title=" + title + "]\n";
+    return "Evento [id=" + id + ", title=" + title + "]\n";
   }
 
 }
