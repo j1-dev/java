@@ -1,0 +1,770 @@
+====== LEYENDO POKEDEX ============================================= LECTURA COMPLETA ======================================= 
+====== 5 ULTIMOS POKEMON ======================={
+	id: 147
+	name: Dratini
+	num: 147
+	type: [Dragon]
+	height: 1.80 m
+	weight: 3.3 kg
+	weaknesses: [Ice, Dragon, Fairy]
+}{
+	id: 148
+	name: Dragonair
+	num: 148
+	type: [Dragon]
+	height: 3.99 m
+	weight: 16.5 kg
+	weaknesses: [Ice, Dragon, Fairy]
+}{
+	id: 149
+	name: Dragonite
+	num: 149
+	type: [Dragon, Flying]
+	height: 2.21 m
+	weight: 210.0 kg
+	weaknesses: [Ice, Rock, Dragon, Fairy]
+}{
+	id: 150
+	name: Mewtwo
+	num: 150
+	type: [Psychic]
+	height: 2.01 m
+	weight: 122.0 kg
+	weaknesses: [Bug, Ghost, Dark]
+}{
+	id: 151
+	name: Mew
+	num: 151
+	type: [Psychic]
+	height: 0.41 m
+	weight: 4.0 kg
+	weaknesses: [Bug, Ghost, Dark]
+}====== DATOS DE PIKACHU ======================={
+	id: 25
+	name: Pikachu
+	num: 025
+	type: [Electric]
+	height: 0.41 m
+	weight: 6.0 kg
+	weaknesses: [Ground]
+}====== EVOLUCIONES DE CHARMANDER ======================={
+	id: null
+	name: Charmeleon
+	num: 005
+	type: null
+	height: null
+	weight: null
+	weaknesses: null
+}{
+	id: null
+	name: Charizard
+	num: 006
+	type: null
+	height: null
+	weight: null
+	weaknesses: null
+}====== POKEMON TIPO FIRE ======================={
+	id: 4
+	name: Charmander
+	num: 004
+	type: [Fire]
+	height: 0.61 m
+	weight: 8.5 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 5
+	name: Charmeleon
+	num: 005
+	type: [Fire]
+	height: 1.09 m
+	weight: 19.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 6
+	name: Charizard
+	num: 006
+	type: [Fire, Flying]
+	height: 1.70 m
+	weight: 90.5 kg
+	weaknesses: [Water, Electric, Rock]
+}{
+	id: 37
+	name: Vulpix
+	num: 037
+	type: [Fire]
+	height: 0.61 m
+	weight: 9.9 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 38
+	name: Ninetales
+	num: 038
+	type: [Fire]
+	height: 1.09 m
+	weight: 19.9 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 58
+	name: Growlithe
+	num: 058
+	type: [Fire]
+	height: 0.71 m
+	weight: 19.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 59
+	name: Arcanine
+	num: 059
+	type: [Fire]
+	height: 1.91 m
+	weight: 155.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 77
+	name: Ponyta
+	num: 077
+	type: [Fire]
+	height: 0.99 m
+	weight: 30.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 78
+	name: Rapidash
+	num: 078
+	type: [Fire]
+	height: 1.70 m
+	weight: 95.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 126
+	name: Magmar
+	num: 126
+	type: [Fire]
+	height: 1.30 m
+	weight: 44.5 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 136
+	name: Flareon
+	num: 136
+	type: [Fire]
+	height: 0.89 m
+	weight: 25.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 146
+	name: Moltres
+	num: 146
+	type: [Fire, Flying]
+	height: 2.01 m
+	weight: 60.0 kg
+	weaknesses: [Water, Electric, Rock]
+}====== POKEMON CON DEBILIDAD WATER O ELECTRIC ======================={
+	id: 4
+	name: Charmander
+	num: 004
+	type: [Fire]
+	height: 0.61 m
+	weight: 8.5 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 5
+	name: Charmeleon
+	num: 005
+	type: [Fire]
+	height: 1.09 m
+	weight: 19.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 6
+	name: Charizard
+	num: 006
+	type: [Fire, Flying]
+	height: 1.70 m
+	weight: 90.5 kg
+	weaknesses: [Water, Electric, Rock]
+}{
+	id: 7
+	name: Squirtle
+	num: 007
+	type: [Water]
+	height: 0.51 m
+	weight: 9.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 8
+	name: Wartortle
+	num: 008
+	type: [Water]
+	height: 0.99 m
+	weight: 22.5 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 9
+	name: Blastoise
+	num: 009
+	type: [Water]
+	height: 1.60 m
+	weight: 85.5 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 12
+	name: Butterfree
+	num: 012
+	type: [Bug, Flying]
+	height: 1.09 m
+	weight: 32.0 kg
+	weaknesses: [Fire, Electric, Ice, Flying, Rock]
+}{
+	id: 16
+	name: Pidgey
+	num: 016
+	type: [Normal, Flying]
+	height: 0.30 m
+	weight: 1.8 kg
+	weaknesses: [Electric, Rock]
+}{
+	id: 17
+	name: Pidgeotto
+	num: 017
+	type: [Normal, Flying]
+	height: 1.09 m
+	weight: 30.0 kg
+	weaknesses: [Electric, Rock]
+}{
+	id: 18
+	name: Pidgeot
+	num: 018
+	type: [Normal, Flying]
+	height: 1.50 m
+	weight: 39.5 kg
+	weaknesses: [Electric, Rock]
+}{
+	id: 21
+	name: Spearow
+	num: 021
+	type: [Normal, Flying]
+	height: 0.30 m
+	weight: 2.0 kg
+	weaknesses: [Electric, Rock]
+}{
+	id: 22
+	name: Fearow
+	num: 022
+	type: [Normal, Flying]
+	height: 1.19 m
+	weight: 38.0 kg
+	weaknesses: [Electric, Rock]
+}{
+	id: 27
+	name: Sandshrew
+	num: 027
+	type: [Ground]
+	height: 0.61 m
+	weight: 12.0 kg
+	weaknesses: [Water, Grass, Ice]
+}{
+	id: 28
+	name: Sandslash
+	num: 028
+	type: [Ground]
+	height: 0.99 m
+	weight: 29.5 kg
+	weaknesses: [Water, Grass, Ice]
+}{
+	id: 31
+	name: Nidoqueen
+	num: 031
+	type: [Poison, Ground]
+	height: 1.30 m
+	weight: 60.0 kg
+	weaknesses: [Water, Ice, Ground, Psychic]
+}{
+	id: 34
+	name: Nidoking
+	num: 034
+	type: [Poison, Ground]
+	height: 1.40 m
+	weight: 62.0 kg
+	weaknesses: [Water, Ice, Ground, Psychic]
+}{
+	id: 37
+	name: Vulpix
+	num: 037
+	type: [Fire]
+	height: 0.61 m
+	weight: 9.9 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 38
+	name: Ninetales
+	num: 038
+	type: [Fire]
+	height: 1.09 m
+	weight: 19.9 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 41
+	name: Zubat
+	num: 041
+	type: [Poison, Flying]
+	height: 0.79 m
+	weight: 7.5 kg
+	weaknesses: [Electric, Ice, Psychic, Rock]
+}{
+	id: 42
+	name: Golbat
+	num: 042
+	type: [Poison, Flying]
+	height: 1.60 m
+	weight: 55.0 kg
+	weaknesses: [Electric, Ice, Psychic, Rock]
+}{
+	id: 50
+	name: Diglett
+	num: 050
+	type: [Ground]
+	height: 0.20 m
+	weight: 0.8 kg
+	weaknesses: [Water, Grass, Ice]
+}{
+	id: 51
+	name: Dugtrio
+	num: 051
+	type: [Ground]
+	height: 0.71 m
+	weight: 33.3 kg
+	weaknesses: [Water, Grass, Ice]
+}{
+	id: 54
+	name: Psyduck
+	num: 054
+	type: [Water]
+	height: 0.79 m
+	weight: 19.6 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 55
+	name: Golduck
+	num: 055
+	type: [Water]
+	height: 1.70 m
+	weight: 76.6 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 58
+	name: Growlithe
+	num: 058
+	type: [Fire]
+	height: 0.71 m
+	weight: 19.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 59
+	name: Arcanine
+	num: 059
+	type: [Fire]
+	height: 1.91 m
+	weight: 155.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 60
+	name: Poliwag
+	num: 060
+	type: [Water]
+	height: 0.61 m
+	weight: 12.4 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 61
+	name: Poliwhirl
+	num: 061
+	type: [Water]
+	height: 0.99 m
+	weight: 20.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 62
+	name: Poliwrath
+	num: 062
+	type: [Water, Fighting]
+	height: 1.30 m
+	weight: 54.0 kg
+	weaknesses: [Electric, Grass, Flying, Psychic, Fairy]
+}{
+	id: 72
+	name: Tentacool
+	num: 072
+	type: [Water, Poison]
+	height: 0.89 m
+	weight: 45.5 kg
+	weaknesses: [Electric, Ground, Psychic]
+}{
+	id: 73
+	name: Tentacruel
+	num: 073
+	type: [Water, Poison]
+	height: 1.60 m
+	weight: 55.0 kg
+	weaknesses: [Electric, Ground, Psychic]
+}{
+	id: 74
+	name: Geodude
+	num: 074
+	type: [Rock, Ground]
+	height: 0.41 m
+	weight: 20.0 kg
+	weaknesses: [Water, Grass, Ice, Fighting, Ground, Steel]
+}{
+	id: 75
+	name: Graveler
+	num: 075
+	type: [Rock, Ground]
+	height: 0.99 m
+	weight: 105.0 kg
+	weaknesses: [Water, Grass, Ice, Fighting, Ground, Steel]
+}{
+	id: 76
+	name: Golem
+	num: 076
+	type: [Rock, Ground]
+	height: 1.40 m
+	weight: 300.0 kg
+	weaknesses: [Water, Grass, Ice, Fighting, Ground, Steel]
+}{
+	id: 77
+	name: Ponyta
+	num: 077
+	type: [Fire]
+	height: 0.99 m
+	weight: 30.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 78
+	name: Rapidash
+	num: 078
+	type: [Fire]
+	height: 1.70 m
+	weight: 95.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 79
+	name: Slowpoke
+	num: 079
+	type: [Water, Psychic]
+	height: 1.19 m
+	weight: 36.0 kg
+	weaknesses: [Electric, Grass, Bug, Ghost, Dark]
+}{
+	id: 80
+	name: Slowbro
+	num: 080
+	type: [Water, Psychic]
+	height: 1.60 m
+	weight: 78.5 kg
+	weaknesses: [Electric, Grass, Bug, Ghost, Dark]
+}{
+	id: 81
+	name: Magnemite
+	num: 081
+	type: [Electric]
+	height: 0.30 m
+	weight: 6.0 kg
+	weaknesses: [Fire, Water, Ground]
+}{
+	id: 82
+	name: Magneton
+	num: 082
+	type: [Electric]
+	height: 0.99 m
+	weight: 60.0 kg
+	weaknesses: [Fire, Water, Ground]
+}{
+	id: 83
+	name: Farfetch'd
+	num: 083
+	type: [Normal, Flying]
+	height: 0.79 m
+	weight: 15.0 kg
+	weaknesses: [Electric, Rock]
+}{
+	id: 84
+	name: Doduo
+	num: 084
+	type: [Normal, Flying]
+	height: 1.40 m
+	weight: 39.2 kg
+	weaknesses: [Electric, Rock]
+}{
+	id: 85
+	name: Dodrio
+	num: 085
+	type: [Normal, Flying]
+	height: 1.80 m
+	weight: 85.2 kg
+	weaknesses: [Electric, Rock]
+}{
+	id: 86
+	name: Seel
+	num: 086
+	type: [Water]
+	height: 1.09 m
+	weight: 90.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 87
+	name: Dewgong
+	num: 087
+	type: [Water, Ice]
+	height: 1.70 m
+	weight: 120.0 kg
+	weaknesses: [Electric, Grass, Fighting, Rock]
+}{
+	id: 90
+	name: Shellder
+	num: 090
+	type: [Water]
+	height: 0.30 m
+	weight: 4.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 91
+	name: Cloyster
+	num: 091
+	type: [Water, Ice]
+	height: 1.50 m
+	weight: 132.5 kg
+	weaknesses: [Electric, Grass, Fighting, Rock]
+}{
+	id: 95
+	name: Onix
+	num: 095
+	type: [Rock, Ground]
+	height: 8.79 m
+	weight: 210.0 kg
+	weaknesses: [Water, Grass, Ice, Fighting, Ground, Steel]
+}{
+	id: 98
+	name: Krabby
+	num: 098
+	type: [Water]
+	height: 0.41 m
+	weight: 6.5 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 99
+	name: Kingler
+	num: 099
+	type: [Water]
+	height: 1.30 m
+	weight: 60.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 104
+	name: Cubone
+	num: 104
+	type: [Ground]
+	height: 0.41 m
+	weight: 6.5 kg
+	weaknesses: [Water, Grass, Ice]
+}{
+	id: 105
+	name: Marowak
+	num: 105
+	type: [Ground]
+	height: 0.99 m
+	weight: 45.0 kg
+	weaknesses: [Water, Grass, Ice]
+}{
+	id: 111
+	name: Rhyhorn
+	num: 111
+	type: [Ground, Rock]
+	height: 0.99 m
+	weight: 115.0 kg
+	weaknesses: [Water, Grass, Ice, Fighting, Ground, Steel]
+}{
+	id: 112
+	name: Rhydon
+	num: 112
+	type: [Ground, Rock]
+	height: 1.91 m
+	weight: 120.0 kg
+	weaknesses: [Water, Grass, Ice, Fighting, Ground, Steel]
+}{
+	id: 116
+	name: Horsea
+	num: 116
+	type: [Water]
+	height: 0.41 m
+	weight: 8.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 117
+	name: Seadra
+	num: 117
+	type: [Water]
+	height: 1.19 m
+	weight: 25.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 118
+	name: Goldeen
+	num: 118
+	type: [Water]
+	height: 0.61 m
+	weight: 15.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 119
+	name: Seaking
+	num: 119
+	type: [Water]
+	height: 1.30 m
+	weight: 39.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 120
+	name: Staryu
+	num: 120
+	type: [Water]
+	height: 0.79 m
+	weight: 34.5 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 121
+	name: Starmie
+	num: 121
+	type: [Water, Psychic]
+	height: 1.09 m
+	weight: 80.0 kg
+	weaknesses: [Electric, Grass, Bug, Ghost, Dark]
+}{
+	id: 123
+	name: Scyther
+	num: 123
+	type: [Bug, Flying]
+	height: 1.50 m
+	weight: 56.0 kg
+	weaknesses: [Fire, Electric, Ice, Flying, Rock]
+}{
+	id: 126
+	name: Magmar
+	num: 126
+	type: [Fire]
+	height: 1.30 m
+	weight: 44.5 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 129
+	name: Magikarp
+	num: 129
+	type: [Water]
+	height: 0.89 m
+	weight: 10.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 130
+	name: Gyarados
+	num: 130
+	type: [Water, Flying]
+	height: 6.50 m
+	weight: 235.0 kg
+	weaknesses: [Electric, Rock]
+}{
+	id: 131
+	name: Lapras
+	num: 131
+	type: [Water, Ice]
+	height: 2.49 m
+	weight: 220.0 kg
+	weaknesses: [Electric, Grass, Fighting, Rock]
+}{
+	id: 134
+	name: Vaporeon
+	num: 134
+	type: [Water]
+	height: 0.99 m
+	weight: 29.0 kg
+	weaknesses: [Electric, Grass]
+}{
+	id: 136
+	name: Flareon
+	num: 136
+	type: [Fire]
+	height: 0.89 m
+	weight: 25.0 kg
+	weaknesses: [Water, Ground, Rock]
+}{
+	id: 138
+	name: Omanyte
+	num: 138
+	type: [Rock, Water]
+	height: 0.41 m
+	weight: 7.5 kg
+	weaknesses: [Electric, Grass, Fighting, Ground]
+}{
+	id: 139
+	name: Omastar
+	num: 139
+	type: [Rock, Water]
+	height: 0.99 m
+	weight: 35.0 kg
+	weaknesses: [Electric, Grass, Fighting, Ground]
+}{
+	id: 140
+	name: Kabuto
+	num: 140
+	type: [Rock, Water]
+	height: 0.51 m
+	weight: 11.5 kg
+	weaknesses: [Electric, Grass, Fighting, Ground]
+}{
+	id: 141
+	name: Kabutops
+	num: 141
+	type: [Rock, Water]
+	height: 1.30 m
+	weight: 40.5 kg
+	weaknesses: [Electric, Grass, Fighting, Ground]
+}{
+	id: 142
+	name: Aerodactyl
+	num: 142
+	type: [Rock, Flying]
+	height: 1.80 m
+	weight: 59.0 kg
+	weaknesses: [Water, Electric, Ice, Rock, Steel]
+}{
+	id: 144
+	name: Articuno
+	num: 144
+	type: [Ice, Flying]
+	height: 1.70 m
+	weight: 55.4 kg
+	weaknesses: [Fire, Electric, Rock, Steel]
+}{
+	id: 146
+	name: Moltres
+	num: 146
+	type: [Fire, Flying]
+	height: 2.01 m
+	weight: 60.0 kg
+	weaknesses: [Water, Electric, Rock]
+}====== POKEMON CON MAS DEBILIDADES ======================={
+	id: 102
+	name: Exeggcute
+	num: 102
+	type: [Grass, Psychic]
+	height: 0.41 m
+	weight: 2.5 kg
+	weaknesses: [Fire, Ice, Poison, Flying, Bug, Ghost, Dark]
+}====== POKEMON MAS ALTO ======================={
+	id: 95
+	name: Onix
+	num: 095
+	type: [Rock, Ground]
+	height: 8.79 m
+	weight: 210.0 kg
+	weaknesses: [Water, Grass, Ice, Fighting, Ground, Steel]
+}
