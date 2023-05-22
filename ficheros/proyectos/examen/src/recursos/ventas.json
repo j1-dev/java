@@ -1,0 +1,128 @@
+[
+    {
+        "codigoCliente": 1,
+        "fecha": "2023-05-08",
+        "lineas": [
+            {
+                "idLinea": 1,
+                "codigoProducto": 1,
+                "cantidad": 2
+            },
+            {
+                "idLinea": 2,
+                "codigoProducto": 4,
+                "cantidad": 1
+            },
+            {
+                "idLinea": 3,
+                "codigoProducto": 10,
+                "cantidad": 4
+            }
+        ]
+    },
+    {
+        "codigoCliente": 456,
+        "fecha": "2023-05-07",
+        "lineas": [
+            {
+                "idLinea": 1,
+                "codigoProducto": 3,
+                "cantidad": 1
+            },
+            {
+                "idLinea": 2,
+                "codigoProducto": 7,
+                "cantidad": 2
+            },
+            {
+                "idLinea": 3,
+                "codigoProducto": 11,
+                "cantidad": 3
+            }
+        ]
+    },
+    {
+        "codigoCliente": 789,
+        "fecha": "2023-05-06",
+        "lineas": [
+            {
+                "idLinea": 1,
+                "codigoProducto": 2,
+                "cantidad": 2
+            },
+            {
+                "idLinea": 2,
+                "codigoProducto": 6,
+                "cantidad": 1
+            },
+            {
+                "idLinea": 3,
+                "codigoProducto": 13,
+                "cantidad": 1
+            }
+        ]
+    },
+    {
+        "codigoCliente": 321,
+        "fecha": "2023-05-05",
+        "lineas": [
+            {
+                "idLinea": 1,
+                "codigoProducto": 8,
+                "cantidad": 3
+            },
+            {
+                "idLinea": 2,
+                "codigoProducto": 12,
+                "cantidad": 1
+            },
+            {
+                "idLinea": 3,
+                "codigoProducto": 14,
+                "cantidad": 2
+            }
+        ]
+    },
+    {
+        "codigoCliente": 1,
+        "fecha": "2023-05-04",
+        "lineas": [
+            {
+                "idLinea": 1,
+                "codigoProducto": 5,
+                "cantidad": 1
+            },
+            {
+                "idLinea": 2,
+                "codigoProducto": 9,
+                "cantidad": 10
+            },
+            {
+                "idLinea": 3,
+                "codigoProducto": 11,
+                "cantidad": 2
+            }
+        ]
+    },
+    {
+        "codigoCliente": 654,
+        "fecha": "2023-05-04",
+        "lineas": [
+            {
+                "idLinea": 1,
+                "codigoProducto": 5,
+                "cantidad": 1
+            },
+            {
+                "idLinea": 2,
+                "codigoProducto": 9,
+                "cantidad": 10
+            },
+            {
+                "idLinea": 3,
+                "codigoProducto": 11,
+                "cantidad": 2
+            }
+        ]
+    }
+]

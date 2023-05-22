@@ -1,0 +1,20 @@
+codigo;nombre;descripcion;precio;stock
+1;Martillo;;15.99;50
+202;Broca del 15;;5.99;100
+203;Sierra manual;;9.99;10
+204;Cuerda;;7.99;20
+205;Caja de herramientas;;29.99;30
+233;Mesa trabajo;Mesa de trabajo para madera;150;0
+2;Destornillador;Juego de 6 destornilladores de distintas medidas;9.99;20
+3;Taladro;Taladro eléctrico con velocidad variable;69.99;10
+AA;Bombilla; Bombilla 25W;5;2
+4;Sierra circular;Sierra circular para corte de madera;119.99;5
+5;Pintura;Pintura acrílica de alta calidad;29.99;30
+6;Cepillo eléctrico;Cepillo eléctrico para carpintería;59.99;15
+7;Lijadora;Lijadora orbital con sistema de aspiración;89.99;8
+8;Herramienta multiusos;Herramienta multiusos con 12 funciones;24.99;25
+9;Tornillo;Tornillo de acero inoxidable de 10 mm;0.99;100
+10;Clavo;Clavo para madera de 3 pulgadas;0.25;200
+11;Serrucho;Serrucho de carpintero con mango ergonómico;14.99;12
+12;Llave inglesa;Llave inglesa ajustable de 8 pulgadas;12.99;18
+13;Cinta métrica;Cinta métrica de 3 metros;5.99;35

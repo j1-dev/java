@@ -1,0 +1,17 @@
+Martillo (1) -> 2
+Broca del 15 (202) -> 0
+Sierra manual (203) -> 0
+Cuerda (204) -> 0
+Caja de herramientas (205) -> 0
+Destornillador (2) -> 2
+Taladro (3) -> 1
+Sierra circular (4) -> 1
+Pintura (5) -> 2
+Cepillo eléctrico (6) -> 1
+Lijadora (7) -> 2
+Herramienta multiusos (8) -> 3
+Tornillo (9) -> 20
+Clavo (10) -> 4
+Serrucho (11) -> 7
+Llave inglesa (12) -> 1
+Cinta métrica (13) -> 1

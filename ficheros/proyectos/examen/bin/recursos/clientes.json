@@ -1,0 +1,68 @@
+[
+  {
+    "codigo": 1,
+    "nombre": "Juan Perez",
+    "direccion": "Calle Mayor 123, Madrid",
+    "email": "juanperez@example.com"
+  },
+  {
+    "codigo": 2,
+    "nombre": "María García",
+    "direccion": "Avenida Primavera 456, Barcelona",
+    "email": "mariagarcia@example.com"
+  },
+  {
+    "codigo": 3,
+    "nombre": "Pedro López",
+    "direccion": "Plaza España 789, Valencia",
+    "email": "pedrolopez@example.com"
+  },
+  {
+    "codigo": 4,
+    "nombre": "Ana Martínez",
+    "direccion": "Calle Alameda 321, Sevilla",
+    "email": "anamartinez@example.com"
+  },
+  {
+    "codigo": 5,
+    "nombre": "Javier Fernández",
+    "direccion": "Paseo del Prado 987, Madrid",
+    "email": "javierfernandez@example.com"
+  },
+  {
+    "codigo": 123,
+    "nombre": "Juan Perez",
+    "direccion": "Calle 123",
+    "email": "juanperez@example.com"
+  },
+  {
+    "codigo": 456,
+    "nombre": "Maria Rodriguez",
+    "direccion": "Avenida 456",
+    "email": "mariarodriguez@example.com"
+  },
+  {
+    "codigo": 789,
+    "nombre": "Ana Martinez",
+    "direccion": "Plaza 789",
+    "email": "anamartinez@example.com"
+  },
+  {
+    "codigo": 321,
+    "nombre": "Pablo Gomez",
+    "direccion": "Carretera 321",
+    "email": "pablogomez@example.com"
+  },
+  {
+    "codigo": 123,
+    "nombre": "Juan Perez",
+    "direccion": "Calle 123",
+    "email": "juanperez@example.com"
+  },
+  {
+    "codigo": 654,
+    "nombre": "Sofia Fernandez",
+    "direccion": "Travesia 654",
+    "email": "sofiafernandez@example.com"
+  }
+]
