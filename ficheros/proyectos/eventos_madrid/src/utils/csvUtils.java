@@ -31,8 +31,7 @@ public class csvUtils {
         evento.setDtstart(fields[7]);
         evento.setDtend(fields[8]);
         evento.setTime(fields[9]);
-
-        System.out.println(evento.toString());
+        evento.getAddress().getArea().setPostalCode(removeQuotes(fields[22]));
 
         eventos.add(evento);
         line = br.readLine();

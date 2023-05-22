@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class Evento {
-  @JsonProperty("@id")
+  @JsonProperty("id")
   private String id;
   @JsonProperty("@type")
   private String type;
@@ -18,8 +18,10 @@ public class Evento {
   private String time;
   @JsonProperty("event-location")
   private String eventLocation;
+  private Address address;
 
   public Evento() {
+    address = new Address();
   }
 
   public String getId() {
@@ -102,9 +104,17 @@ public class Evento {
     this.eventLocation = eventLocation;
   }
 
-  @Override
-  public String toString() {
-    return "Evento [id=" + id + ", title=" + title + "]\n";
+  public Address getAddress() {
+    return address;
   }
 
+  public void setAddress(Address address) {
+    this.address = address;
+  }
+
+  @Override
+  public String toString() {
+    return "Evento [id=" + id + ", title=" + title + ", cp=" + address.getArea().getPostalCode() + ", free=" + free
+        + "]";
+  }
 }
