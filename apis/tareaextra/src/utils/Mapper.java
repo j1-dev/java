@@ -1,13 +1,12 @@
 package utils;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.JsonNode;
 
 import clases.Pelicula;
 import clases.Persona;
 
 import java.util.ArrayList;
-
-import com.fasterxml.jackson.databind.JsonNode;
 
 public class Mapper {
   private static ObjectMapper objectMapper = new ObjectMapper();
@@ -47,14 +46,13 @@ public class Mapper {
     ArrayList<Persona> personas = new ArrayList<>();
 
     for (JsonNode personaNode : resultsNode) {
-
       String name = getJsonNodeTextValue(personaNode, "name");
       String gender = mapGender(getJsonNodeIntValue(personaNode, "gender"));
       String role = getJsonNodeTextValue(personaNode, "known_for_department");
       Double popularity = getJsonNodeDoubleValue(personaNode, "popularity");
       ArrayList<Pelicula> filmography = mapFilmography(personaNode.get("known_for"));
+
       Persona persona = new Persona(name, gender, role, popularity, filmography);
-      System.out.println(persona.toString());
       personas.add(persona);
     }
 

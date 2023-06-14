@@ -28,7 +28,7 @@ public class Printer {
 
     System.out.println("Peliculas encontradas: " + limit);
     for (int i = 0; i < limit; i++) {
-      System.out.println(peliculas.get(i).toString());
+      System.out.println(i + 1 + ": " + peliculas.get(i).toString());
     }
   }
 
@@ -41,7 +41,7 @@ public class Printer {
 
     System.out.println("Personas encontradas: " + limit);
     for (int i = 0; i < limit; i++) {
-      System.out.println(personas.get(i).toString());
+      System.out.println(i + 1 + ": " + personas.get(i).toString());
     }
   }
 }
