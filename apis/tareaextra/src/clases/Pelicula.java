@@ -57,7 +57,7 @@ public class Pelicula {
 
   @Override
   public String toString() {
-    return "{\n\tTitulo: " + title + "\n\tAño: " + year + "\n\tPuntuacion: " + rating + "\n\tVotos :" + votes
+    return "{\n\tTitulo: " + title + "\n\tAño: " + year + "\n\tPuntuacion: " + rating + "\n\tVotos: " + votes
         + "\n\tResumen: " + summary + "\n}";
   }
 
